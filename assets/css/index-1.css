@@ -1,0 +1,462 @@
+/*主题资源位*/
+	
+	.fade-enter-active,
+	.fade-leave-active {
+		transition: opacity .5s
+	}
+	
+	.fade-enter,
+	.fade-leave-to {
+		opacity: 0
+	}
+	
+	.topic-wrapper {
+		padding: .15rem .1rem;
+		height: 1.4rem;
+	}
+	
+	.row:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	
+	.topic-wrapper.row .col {
+		float: left;
+	}
+	
+	.topic-wrapper.row .c4 {
+		width: 1.12rem;
+		height: 1.4rem;
+		overflow: hidden;
+	}
+	
+	.topic-wrapper.row .c8 {
+		width: 2.43rem;
+		height: .65rem;
+	}
+	
+	.topic-wrapper .topic-right .row .c6 {
+		width: 1.11rem;
+		height: .66rem;
+		overflow: hidden;
+	}
+	
+	.topic-wrapper img {
+		width: 100%;
+		vertical-align: middle;
+	}
+	
+	.topic-right {
+		margin-left: .1rem;
+	}
+	
+	.topic-right>a {
+		display: block;
+		margin-bottom: .1rem;
+		height: .65rem;
+		overflow: hidden;
+	}
+	
+	.topic-right .down a:first-child {
+		padding-right: .05rem;
+		width: 1.11rem !important;
+	}
+	
+	.topic-right .down a:last-child {
+		padding-left: .05rem;
+	}
+	/*二级分类*/
+	
+	.category-active {
+		color: #FE814B !important;
+	}
+	
+	.category-two {
+		height: 1.8rem;
+		overflow: hidden;
+		padding: 0.15rem 0.15rem 0 0.15rem;
+	}
+	
+	.category-item {
+		float: left;
+		width: 25%;
+		margin-bottom: 0.25rem;
+	}
+	
+	.category-item h1 {
+		text-align: center;
+	}
+	
+	.category-item h1 img {
+		width: 0.43rem;
+		height: 0.45rem;
+		margin-bottom: 0.13rem;
+	}
+	
+	.category-item p {
+		text-align: center;
+		color: #514F4F;
+		font-size: 0.12rem;
+	}
+	/*轮播*/
+	
+	.mint-swipe {
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+	}
+	
+	.mint-swipe-items-wrap {
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+	
+	.mint-swipe-items-wrap>div {
+		position: absolute;
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		width: 100%;
+		height: 100%;
+		display: none
+	}
+	
+	.mint-swipe-items-wrap>div.is-active {
+		display: block;
+		-webkit-transform: none;
+		transform: none;
+	}
+	
+	.mint-swipe-items-wrap img {
+		width: 100%;
+		height: 100%;
+		-webkit-touch-callout: default;
+	}
+	
+	.mint-swipe-indicators-right {
+		position: absolute;
+		bottom: 0.15rem;
+		right: 0.1rem;
+	}
+	
+	.mint-swipe-indicators-center {
+		position: absolute;
+		bottom: 0.15rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	
+	.mint-swipe-indicator {
+		width: 0.08rem;
+		height: 0.08rem;
+		display: inline-block;
+		border-radius: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		margin: 0 0.03rem;
+	}
+	
+	.mint-swipe-indicator.is-active {
+		background: #FFFFFF;
+	}
+	/*商品*/
+	
+	.Affix {
+		z-index: 100;
+		position: fixed;
+		width: 100%;
+		/*top: 40px;*/
+		top: 84px;
+	}
+	
+	.sort-bar {
+		padding: .07rem .1rem;
+		font-size: 0;
+		background: #FFF;
+	}
+	
+	.sort-bar a {
+		position: relative;
+		display: inline-block;
+		width: 33.33%;
+		line-height: 25px;
+		font-size: 14px;
+		color: #333;
+		text-align: center;
+	}
+	
+	.sort-bar .active {
+		color: #FE312A;
+	}
+	
+	.sort-tool {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	
+	.sort-tool .s-box {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	
+	.sort-tool .s-box {
+		position: relative;
+		line-height: 25px;
+		font-size: 14px;
+		color: #333;
+		text-align: center;
+	}
+	
+	.sort-tool .s-box.active {
+		color: #FE312A;
+	}
+	
+	.sort-icon {
+		position: relative;
+	}
+	
+	.sort-icon i.asc,
+	.sort-icon i.dsc {
+		width: 9px;
+		height: 4px;
+		cursor: pointer;
+		position: absolute;
+		left: 6px;
+	}
+	
+	.sort-icon i.asc {
+		top: 1px;
+	}
+	
+	.sort-icon i.dsc {
+		top: 9px;
+	}
+	
+	.sort-icon i.asc:before,
+	.sort-icon i.asc:after,
+	.sort-icon i.dsc:before,
+	.sort-icon i.dsc:after {
+		content: '';
+		border-style: solid;
+		position: absolute;
+		left: 0;
+	}
+	
+	.sort-icon i.asc:before {
+		border-width: 0 6px 6px 6px;
+		border-color: transparent transparent #979797 transparent;
+		top: 0;
+	}
+	
+	.sort-icon i.asc:after {
+		border-width: 0 6px 6px 6px;
+		border-color: transparent transparent #fff transparent;
+		top: 1px;
+	}
+	
+	.sort-icon i.dsc:before {
+		border-width: 6px 6px 0 6px;
+		border-color: #979797 transparent transparent transparent;
+		top: 0;
+	}
+	
+	.sort-icon i.dsc:after {
+		border-width: 6px 6px 0 6px;
+		border-color: #fff transparent transparent transparent;
+		top: -1px;
+	}
+	
+	.sort-tool .s-box.active .sort-icon i.asc.on:before {
+		border-color: transparent transparent #FE312A transparent;
+	}
+	
+	.sort-tool .s-box.active .sort-icon i.dsc.on:before {
+		border-color: #FE312A transparent transparent transparent;
+	}
+	/*商品列表*/
+	
+	.nav-bar {
+		width: 100%;
+	}
+	
+	.goodsOne {
+		padding: 15px 12px;
+		border-top: 1px solid #F1F1F1;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	
+	.goodsOne .cover-image {
+		width: 125px;
+		height: 125px;
+		vertical-align: top;
+		display: inline-block;
+		position: relative;
+	}
+	
+	.goodsOne .cover-image .image {
+		width: 125px;
+		height: 125px;
+		display: inline-block;
+	}
+	
+	.goodsOne .cover-image .tong {
+		width: 100%;
+		height: .2rem;
+		line-height: .2rem;
+		color: #FFF;
+		background: -webkit-gradient(linear, left top, right top, from(rgba(234, 120, 51, .7)), to(rgba(246, 55, 11, .7)));
+		background: -webkit-linear-gradient(left, rgba(234, 120, 51, .7), rgba(246, 55, 11, .7));
+		background: -o-linear-gradient(left, rgba(234, 120, 51, .7), rgba(246, 55, 11, .7));
+		background: linear-gradient(90deg, rgba(234, 120, 51, .7), rgba(246, 55, 11, .7));
+		font-size: .1rem;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	.goodsOne .cover-image .tong img {
+		width: .1rem;
+		height: .1rem;
+		vertical-align: middle;
+	}
+	
+	.goodsOne .item-info {
+		margin-left: .1rem;
+		display: inline-block;
+	}
+	
+	.goodsOne .item-info .title {
+		width: 2.17rem;
+		height: .44rem;
+		line-height: .22rem;
+		color: #333;
+		font-size: 16px;
+		vertical-align: middle;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		margin-bottom: 4px;
+	}
+	
+	.goodsOne .item-info .title .tabsImg {
+		width: 13px;
+		margin-right: 5px;
+	}
+	
+	.goodsOne .item-info p.rec {
+		width: 2.17rem;
+		height: 20px;
+		line-height: 20px;
+		color: #FB5413;
+		font-size: 14px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.goodsOne .item-info .title .text img {
+		width: .13rem;
+		height: .13rem;
+		margin-right: 0.03rem;
+	}
+	
+	.goodsOne .item-info .title .tab img {
+		width: 0.13rem;
+		height: 0.13rem;
+		margin-right: 0.03rem;
+	}
+	
+	.goodsOne .item-info .info {
+		margin-top: .08rem;
+	}
+	
+	.goodsOne .item-info .info .title {
+		color: #FE814B;
+		font-size: 0.11rem;
+		height: .14rem;
+		margin-bottom: 0.03rem;
+	}
+	
+	.goodsOne .count {
+		color: #C7C4C4;
+		font-size: 12px;
+		margin-top: .12rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	
+	.goodsOne .count .alreadyBuy {
+		color: #B1AEAE;
+	}
+	
+	.goodsOne .item-info .coupon {
+		height: .24rem;
+		line-height: .24rem;
+		margin-top: .12rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	.goodsOne .item-info .coupon .price {
+		color: #FC3D37;
+		font-size: 12px;
+		display: inline-block;
+	}
+	
+	.goodsOne .item-info .coupon .price b {
+		font-size: 22px;
+	}
+	
+	.goodsOne .item-info .coupon .count-label {
+		width: 70px;
+		height: 23px;
+		color: #fff;
+		background: url(//oss1.lanlanlife.com/105634c31956b0be54ac867a209c26ca_46x140.png) no-repeat;
+		background-size: 70px 23px;
+		border-radius: 1px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
+	.goodsOne .item-info .coupon .count-label strong {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.last-page {
+		width: 100%;
+		p {
+			color: #333;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			font-size: 14px;
+		}
+	}
